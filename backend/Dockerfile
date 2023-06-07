@@ -251,3 +251,16 @@ RUN pip install /mdec-base /mdec-snowman \
 
 USER mdec
 CMD ["python3", "-m", "mdecsnowman"]
+
+#
+# GPT4
+#
+FROM base as gpt
+
+COPY common/mdec-base /mdec-base
+COPY gpt/mdec-gpt /mdec-gpt
+RUN pip install /mdec-base /mdec-gpt \
+ && rm -rf /mdec-base /mdec-gpt
+
+USER mdec
+CMD ["python3", "-m", "mdecgpt"]

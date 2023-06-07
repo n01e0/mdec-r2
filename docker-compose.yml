@@ -63,5 +63,11 @@ services:
       context: backend
       target: snowman
 
+  gpt:
+    build:
+      context: backend
+      target: gpt
+    env_file: gpt_env.env
+
 volumes:
   nginx_logs:

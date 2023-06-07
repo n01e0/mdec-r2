@@ -156,6 +156,12 @@ body {
               Snowman
             </a>
           </li>
+          <li>
+            <a href="#" class="dropdown-item service-checkbox-link" for="gpt-checkbox">
+              <input class="form-check-input service-checkbox" type="checkbox" data-value="gpt" value="" id="gpt-checkbox">
+              GPT
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -174,6 +180,7 @@ body {
     <div class="editor-col" id="reko-col"><h3>Reko</h3><div class="version" id="reko-version"></div><div class="editor" id="reko-editor"></div></div>
     <div class="editor-col" id="retdec-col"><h3>RetDec</h3><div class="version" id="retdec-version"></div><div class="editor" id="retdec-editor"></div></div>
     <div class="editor-col" id="snowman-col"><h3>Snowman</h3><div class="version" id="snowman-version"></div><div class="editor" id="snowman-editor"></div></div>
+    <div class="editor-col" id="gpt-col"><h3>GPT</h3><div class="version" id="gpt-version"></div><div class="editor" id="gpt-editor"></div></div>
   </div>
 
   </div>
@@ -187,7 +194,7 @@ body {
 
 <script type="text/javascript">
 
-    var services = ['angr', 'binja', 'ghidra', 'hexrays', 'jeb', 'r2dec', 'r2ghidra', 'reko', 'retdec', 'snowman'];
+    var services = ['angr', 'binja', 'ghidra', 'hexrays', 'jeb', 'r2dec', 'r2ghidra', 'reko', 'retdec', 'snowman', 'gpt'];
     var editors = {};
     var version_boxes = {};
     var options = [];
